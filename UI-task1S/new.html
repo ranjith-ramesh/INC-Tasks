@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css">
+    <script src="new.js"></script>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="headerIcon headerDp"></div>
+        <div class="headerIcon notiI"><div class="blackCircle"></div></div>
+        <div class="headerIcon infoI"><div class="blackCircle"></div></div>
+        <div class="headerIcon searchI"><div class="blackCircle"></div></div>
+    </div>
+    <div class="navBar" id="navBar">
+        <div class="logo"></div>
+        <div class="navBg" id="navBg">
+            <div class="navStyle b" id="navStyle"><div class="navB" id="navB"></div></div>
+            <div class="navCenterBlue"></div>
+            <div class="navStyle" id="navStyle"><div class="navA" id="navA"></div></div>
+        </div>
+            <div class="navIcons">
+                <div class="navIconDiv">
+                    <div class="gBg sel" id="gBg1"></div>
+                    <div class="navIcon profileIW" id="nI1"></div>
+                    <div class="borderOut"></div>
+                    <div class="iLable sel" id="iLable1">Profile Info</div>
+                </div>
+                <div class="navIconDiv">
+                    <div class="gBg" id="gBg2"></div>
+                    <div class="navIcon securityIW" id="nI2"></div>
+                    <div class="borderOut"></div>
+                    <div class="iLable" id="iLable2">Security</div>
+                </div>
+                <div class="navIconDiv">
+                    <div class="gBg" id="gBg3"></div>
+                    <div class="navIcon cloudIW" id="nI3"></div>
+                    <div class="borderOut"></div>
+                    <div class="iLable" id="iLable3">Cloud</div>
+                </div>
+                <div class="navIconDiv">
+                    <div class="gBg" id="gBg4"></div>
+                    <div class="navIcon certificatesIW" id="nI4"></div>
+                    <div class="borderOut"></div>
+                    <div class="iLable" id="iLable4">Certificates</div>
+                </div>
+                <div class="navIconDiv">
+                    <div class="gBg" id="gBg5"></div>
+                    <div class="navIcon walletIW" id="nI5"></div>
+                    <div class="borderOut"></div>
+                    <div class="iLable" id="iLable5">Wallet</div>
+                </div>
+            </div>
+            <div class="eBut" id="eBut" onclick="expand()">></div>
+            <div class="dmButDiv">
+                <div class="dmBut" onclick="darkModeT()" id="dmBut"><div class="blackCircle"></div></div>
+            </div>
+    </div>
+    <div class="container" id="container">
+        <div class="addRelative cont">
+            <h4 class="cText">Profile Info</h4>
+            <div class="cProfile">
+                <div class="cpL">
+                    <div class="cBlock b1">
+                        <div class="b1L1">
+                            <button class="b1but">Edit</button>
+                            <div class="b1l1P">
+                                <div class="pDP"></div>
+                                <div class="pName">
+                                    <p>Kathryn Diaz</p>
+                                    <p class="pEmail">kathryn_diaz_97@zoho.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b1L2">
+                            <div class="b1i b1i1"></div>
+                            <div class="b1LBlock1">
+                                <div class="pLable">GENDER</div>
+                                <div class="pVal">Female</div>
+                            </div>
+                            <div class="b1i b1i2"></div>
+                            <div>
+                                <div class="pLable">LANGUAGE</div>
+                                <div class="pVal">English</div>
+                            </div>
+                        </div>
+                        <div class="b1L2">
+                            <div class="b1i b1i3"></div>
+                            <div class="b1LBlock1">
+                                <div class="pLable">COUNTRY</div>
+                                <div class="pVal">United States</div>
+                            </div>
+                            <div class="b1i b1i4"></div>
+                            <div class="b1LBlock1">
+                                <div class="pLable">TIME ZONE</div>
+                                <div class="pVal">Eastern Dalight Time</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cBlock b2">
+                        <div class="b2H">FAQs</div>
+                        <div class="b2Q">How to secure your Zoho account?</div>
+                        <div class="b2Q">How to configure MFA for my account?</div>
+                        <div class="b2Q">How to change password?</div>
+                        <div class="b2Q">Where can i manage all my activities?</div>
+                        <a href="" class="seeAll">See all</a>
+                    </div>
+                </div>
+                <div class="cpL">
+                    <div class="cBlock b3">
+                        <div class="r2I info"></div>
+                        <div class="b3H">My Email address</div>
+                        <div class="r2Image emailImage"></div>
+                        <small class="notT">No email address added yet</small><br>
+                        <button class="b3but">Add Email</button>
+                    </div>
+                    <div class="cBlock b4" id="b4">
+                        <div class="r2I info"></div>
+                        <div class="b4H">My Mobile Number</div>
+                        <div class="addMcb">
+                            <div class="r2Image mobileImage"></div>
+                            <small class="notT">No Mobile Numbers added yet</small><br>
+                            <button class="b3but" onclick="addMobile()">Add Mobile</button>
+                        </div>
+                       <div class="addMcA">
+                            <div class="mAdded">
+                                <div class="phIcon"></div>
+                                <div class="phT">
+                                    <div class="pnAdded">+91 1234567890</div>
+                                    <div class="timeAdded">Added just now</div>
+                                </div>
+                            </div>
+                            <div class="mAdded">
+                                <div class="phIcon"></div>
+                                <div class="phT">
+                                    <div class="pnAdded">+91 9876543210</div>
+                                    <div class="timeAdded">Added 2 mins ago</div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="addMobile" id="addMobileC">
+        <div class="addRelative">
+            <div class="transp" id="fTransp" onclick="cMobile()"></div>
+            <div class="addMs" id="addMs">
+                <div class="addRelative addM">
+                    <div class="addM1" id="addM1">
+                        <div class="addMtitle">Add Mobile Number</div>
+                        <small>Please enter the mobile number you want to add with your Zoho account</small>
+                        <div class="mobileIn">
+                            <small>Enter mobile number</small>
+                            <input type="text" class="mInput" id="mInput" placeholder="12345 67890">
+                            <div class="indF"></div>
+                            <div class="extin">+91</div>
+                        </div>
+                        <button onclick="nxtM()">Send OTP</button>
+                        <button class="close" onclick="cMobile()">X</button>
+                    </div>
+                    <div class="addM2" id="addM2">
+                        <div class="addMtitle">Enter OTP</div>
+                        <small>A 6 digit OTP is sent to your mobile number.Please enter here to verify.</small>
+                        <div class="otpB">
+                            <small>Enter OTP</small>
+                            <div class="otpInps">
+                                <input class="inpB" id="inpB1" maxlength="1"></input>
+                                <input class="inpB" maxlength="1"></input>
+                                <input class="inpB" maxlength="1"></input>
+                                <input class="inpB" maxlength="1"></input>
+                                <input class="inpB" maxlength="1"></input>
+                                <input class="inpB" maxlength="1"></input>
+                            </div>
+                            <div class="resend">Resend OTP</div>
+                            <div class="m2But">
+                                <button onclick="verify()">Verify</button>
+                                <button class="s2" onclick="cMN()">Change mobile number</button>
+                                <button class="close" onclick="cMobile()">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

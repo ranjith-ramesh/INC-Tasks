@@ -1,0 +1,725 @@
+@font-face {
+    font-family: 'semiBold';
+    src: url("fonts/Zoho\ Puvi\ Medium.otf");
+}
+@font-face {
+    font-family: 'medium';
+    src: url("fonts/Zoho\ Puvi\ Regular.otf");
+}
+@font-face {
+    font-family: 'regular' ;
+    src: url("fonts/Zoho\ Puvi\ Regular.otf");
+}
+@font-face {
+    font-family: 'bold' ;
+    src: url("fonts/Zoho\ Puvi\ Bold.otf");
+}
+*{
+    font-family: 'regular';
+}
+body{
+    background-color: #f8f8f8;
+}
+body.dark{
+    background-color: #000;
+}
+.header{
+    position: fixed;
+    top:0;left:0;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+}
+.dark>.header{
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #212121;
+}
+.navBar{
+    position: fixed;
+    top: 0;left:0;
+    width: 96px;
+    height: 100%;
+    border-right: 1px solid #ebebeb;
+    background-color: #ffffff;
+    z-index: 3;
+    vertical-align: auto;
+    transition: 0.5s;
+}
+.navBar.expand{
+    width: 220px;
+}
+.dark>.navBar{
+    transition: 0;
+    background-color: #1c1c1c;
+    border-right: 1px solid #212121;
+    color: #fff;
+}
+.container{
+    width: calc(100% - 316px);
+    position: absolute;
+    height: calc(100% - 101px);
+    left: 96px;
+    right: 0px;
+    top: 100px;
+    margin: 0 110px;
+    margin: auto;
+    transition: 0.5s;
+}
+.container.expand{
+    margin: 0 40px;
+    left: 220px;
+}
+.dark>.container{
+    background-color: #000;
+    color: #fff;
+}
+.headerIcon {
+    float: right;
+    margin: 38px 25px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    opacity: 0.6;
+    z-index: 4;
+    position: relative;
+}
+.blackCircle{
+    background-image: url("images/blackDot.png");
+    background-size: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:-13px;
+    left: -13px;
+}
+.dark .blackCircle{background-image: url("images/wDot.png")}
+.navIconDiv{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.borderOut{
+    width: 7px;
+    height: inherit;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+}
+.gBg{
+    width: 0px;
+    height: inherit;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background: transparent linear-gradient(180deg, #227CFF 0%, #113E80 100%);
+    transition: 0.5s;
+}
+.gBg.expand{
+    width: 220px;
+    opacity: 1;
+}
+.headerIcon:hover{
+    cursor: pointer;
+}
+.headerIcon:hover>.blackCircle{
+    transition: 0.5s;
+    background-size: 100px;
+}
+.searchI{background-image: url("images/Header/Search.png");}
+.infoI{background-image: url("images/Header/Info.png");}
+.notiI{background-image: url("images/Header/Notification.png");}
+
+.headerDp{
+    width: 54px;
+    height: 54px;
+    margin: 23px;
+    background-image: url("images/DisplayPicture.png");
+    opacity: 1;
+    background-size: 54px;
+}
+.logo{
+    padding: 23px;
+    width: 50px;
+    height: 50px;
+    background-image: url("images/NavBar/Icon.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.navStyle{
+    width: 80px;
+    height: 35px;
+    background-color: #0077CE;
+}
+.navStyle.b{  background-color: #3C44FF;}
+.navCenterBlue{
+    width: 80px;
+    height: 420px;
+    background: linear-gradient(#3C44FF,#0077CE);
+    border-radius: 0 45px 45px 0;
+}
+.navA, .navB{
+    width: 80px;
+    height: 35px;
+    background-color: #fff;
+}
+.navBg{
+    position: absolute;
+    width: 80px;
+    height: 680px;
+    top: 120px;
+    left: 0px;
+    transition: 0.5s;
+}
+.navBg.expand{
+    transition: 0.5s;
+    left: -80px;
+    opacity: 0.3;
+}
+.navB{border-bottom-left-radius: 45px;}
+.navA{border-top-left-radius: 40px;}
+.dark .navA,.dark .navB{background-color: #1c1c1c}
+.navigator{
+    width: 80px;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.navIcons{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 80px;
+    height: auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.navIcon{
+    padding: 25px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    opacity: 0.7;
+    z-index: 5;
+}
+.profileIW{background-image: url("images/NavBar/White/Profile_W.png");}
+.securityIW{background-image: url("images/NavBar/White/Security_W.png");}
+.certificatesIW{background-image: url("images/NavBar/White/Certificates_W.png");}
+.cloudIW{background-image: url("images/NavBar/White/Cloud_W.png");}
+.walletIW{background-image: url("images/NavBar/White/Wallet_W.png");}
+
+.navIcon.profileIW.b{background-image: url("images/NavBar/Blue/Profile_B.png");}
+.navIcon.walletIW.bl{background-image: url("images/NavBar/Blue/Wallet_B.png");}
+.navIcon.securityIW.bl{background-image: url("images/NavBar/Blue/Security_B.png");}
+.navIcon.certificatesIW.bl{background-image: url("images/NavBar/Blue/Certificates_B.png");}
+.navIcon.cloudIW.bl{background-image: url("images/NavBar/Blue/Cloud_B.png");}
+.navIcon:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.navIcon:hover+div{
+    transition: 0.5s;
+    border-left: 7px solid #ffffff;
+}
+.iLable:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.iLable:hover{
+    opacity: 0.9;
+}
+.cProfile{
+    width: 100%;
+    height: auto;
+}
+.cText{
+    margin: 40px 0px 20px 0px;
+    font-size: 24px;
+    font-family: 'semiBold';
+}
+.cBlock{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #ebebeb;
+    height: 338px;
+}
+.dark .cBlock{
+    background-color: #212121;
+    border: 1px solid #272727;
+}
+.cBlock.b1{
+    width: calc(65% - 20px);
+    min-width: 636px;
+}
+.cBlock.b2{
+    width:  calc(35% - 20px);
+    min-width: 400px;
+    position: relative;
+}
+.cBlock.b3 , .cBlock.b4{
+    width: calc(50% - 20px);
+    min-width: 518px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.cpL{
+    width: inherit;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.b1L1{
+    width: auto;
+    height: 70px;
+    margin: 50px;
+}
+.b1l1P{
+    display: flex;
+}
+.pDP{
+    min-width: 80px;
+    height: 80px;
+    border-radius: 41px;
+    border: 2px solid #0077CE;
+    background-image: url("images/DisplayPicture.png");
+    background-repeat: no-repeat;
+    background-size: 81px;
+    background-position: center;
+}
+.b1L1 p{
+    margin: 0px 0px 8px 20px;
+}
+.pName{
+    font-size: 20px;
+    width: auto;
+    font-family: medium;
+    margin-top: 15px;
+}
+.pEmail{
+    font-size: 16px;
+    width: auto;
+    font-weight: 400;
+    opacity: 0.6;
+    font-family: 'regular';
+}
+button{
+    padding: 15px 34px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: 'bold';
+    border-radius: 5px;
+    background-image: linear-gradient(#3C44FF,#0077CE);
+}
+button:hover{
+    cursor: pointer;
+}
+.b1but{
+    float: right;
+}
+.pLable,.pVal{
+    width: auto;
+    margin: 0px;
+    margin-left: 8px;
+}
+div.pVal{
+    font-family: 'regular';
+}
+.b3 small, .b4 small{
+    font-size: 16px;
+    font-family: 'medium';
+}
+.b1i{
+    min-width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    opacity: 0.6;
+}
+.b1i1{background-image: url("images/Profile\ Info/Gender.png")}
+.b1i2{background-image: url("images/Profile\ Info/Language.png")}
+.b1i3{background-image: url("images/Profile\ Info/Location.png")}
+.b1i4{background-image: url("images/Profile\ Info/TimeZone.png")}
+
+.b1L2{
+    margin: 20px 0px 40px 50px;
+    width: inherit;
+    height: 40px;
+    display: flex;
+}
+div.pLable{
+    font-size: 12px;
+    font-family: semiBold;
+    opacity: 0.4;
+    margin-bottom: 6px;
+}
+.b2Q{
+    padding: 20px 40px;
+    font-size: 16px;
+    font-family: 'medium';
+}
+.b2Q:hover{
+    background-color: #f8f8f8;
+    cursor: pointer;
+    color: #000;
+}
+.b2H, .b3H , .b4H{
+    font-size: 20px;
+    font-family: 'semiBold';
+    font-weight: 500;
+    text-align: left;
+    opacity: 1;
+    margin: 10px 0px;
+}
+.b3H , .b4H{
+    margin: 40px 0px 30px 40px;
+}
+.b2H {
+    margin: 40px 0px 10px 40px;
+    font-size: 20px;
+}
+.r2Image{
+    min-width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    margin-bottom: 18px ;
+}
+.emailImage{background-image: url("images/Profile\ Info/Email.png")}
+.mobileImage{background-image: url("images/Profile\ Info/Mobile.png")}
+.b3 button, .b4 button{
+    margin: 20px;
+}
+.b1LBlock1{
+    margin-right: 60px;
+    height: 40px;
+    width: auto ;
+    min-width: 200px;
+}
+.seeAll{
+   position: absolute;
+   top: 40px;
+   right: 40px;
+   font-size: 16px;
+   color: #0089FF;
+   text-decoration: none;
+}
+.r2I{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    opacity: 0.6;
+    margin: 10px 0px;
+    position: relative;
+}
+.r2I:hover{
+    cursor: pointer;
+}
+.r2I.info{background-image: url("images/Header/Info.png");margin: 20px;}
+
+.eBut{
+    width: 9px;
+    height: 10px;
+    color: #0000007f;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    position: absolute;
+    top: 405px;
+    right: -14px;
+    font-size: 9px;
+    font-weight: 600;
+    opacity: 0.5;
+    padding: 8px 0px 9px 2px ;
+}
+.dark>.navBar>.eBut{
+    background-color: #616161;
+    border: 1px solid #272727;
+}
+.eBut:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.iLable{
+    height: 20px;
+    width: 150px;
+    font-family: 'semiBold';
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    z-index: 6;
+    transition: 0.5s;
+}
+.iLable.expand{
+    visibility: visible;
+    opacity: 0.7;
+}
+.iLable.sel{
+    color: #ffffff;
+}
+.dmButDiv{
+    position: absolute;
+    bottom: 10px;
+}
+.dmBut{
+    width: 24px;
+    height: 24px;
+    margin: 28px;
+    border-radius: 12px;
+    background-image: url("images/dm.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    position: relative;
+    z-index: 5;
+}
+.dark .dmBut{background-image: url("images/dm1.png");}
+.dmBut:hover{
+    cursor: pointer;
+}
+.dmBut:hover>.blackCircle{
+    transition: 0.5s;
+    background-size: 100px;
+}
+.addMobile{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 7;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.3s;
+}
+.addMobile.visible{ 
+    visibility: visible;
+    opacity: 1;
+}
+.addRelative{
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+.addRelative.cont{
+    width: 100%;
+    height: auto;
+}
+.transp{
+    width: inherit;
+    height: inherit;
+    opacity: 0.6;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.addMs{
+    width: 601px;
+    height: 331px;
+    margin: 250px auto;
+    position: fixed;
+    overflow: hidden;
+    left: calc(50% - 301px);
+    transition: 0.3s;
+    border-radius: 20px;
+}
+.addMs.two{
+    height: 367px;
+}
+.addM1, .addM2 {
+    width: 520px;
+    height: 250px;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    opacity: 0;
+    position: absolute;
+    transition: 0.3s;
+    border-radius: 20px;
+    top: 331px;
+}
+.visible .addMs , .visible .addM1{
+    top: 0px;
+    opacity: 1;
+}
+.addM2{
+    top: 331px;
+    height: 367px;
+}
+.two .addM1{
+    opacity: 0.9;
+    height: 286px;
+}
+.two .addM2{
+    opacity: 1;
+    top: 0px;
+}
+.addMtitle{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.addM1 small, .addM2 small{
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.6;
+    font-family: 'semiBold';
+}
+.mobileIn small, .otpB small{
+    font-size: 14px;
+    opacity: 1;
+}
+.mobileIn{
+    margin: 30px 0px;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.mInput{
+    width: 320px;
+    height: 50px;
+    margin: 6px 0px;
+    border-radius: 8px;
+    border: 2px solid #E5E5E5;
+    padding-left: 90px;
+    font-size: 16px;
+}
+.indF{
+    width: 24px;
+    height: 18px;
+    background-image: url("images/NavBar/indF.png");
+    background-size: 24px 18px ;
+    border-radius: 3px;
+    position: absolute;
+    top: 43px;
+    left: 55px;
+}
+.extin{
+    font-size: 16px;
+    position: absolute;
+    top: 43px;
+    left: 20px;
+}
+.otpB{
+    width: 370px;
+    height: 106;
+    margin: 30px 0px;
+}
+.otpInps{
+    width: 370px;
+    height: 50px;
+    display: flex;
+    margin: 6px 0px 20px 0px;
+}
+.inpB{
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    margin-right: 14px;
+    border: 2px solid #E5E5E5;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+.resend{
+    font-size: 14px;
+    height: 16px;
+    width: auto;
+    margin-bottom: 20px;
+    color: #0089FF;
+}
+.m2But{
+    width: 400px;
+}
+button.s2{
+    background:linear-gradient(180deg, #F2F2F2 0%, #E0E0E0 100%);
+    color: #000;
+    margin-left: 20px;
+}
+button.close{
+    background: #ABABAB 0% 0% no-repeat padding-box;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 10px;
+    color: #fff;
+    padding: 0;
+}
+button.close:hover{
+    background: #7e7e7e 0% 0% no-repeat padding-box;
+}
+.added>.addMcb{
+    display: none;
+}
+.addMcA{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 338px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.added>.addMcA{
+    top: 60px;
+    opacity: 1;
+}
+.mAdded{
+    width: 280px;
+    height: 60px;
+    display: flex;
+    margin: 40px 0 0px 40px;
+}
+.phIcon{
+    width: 60px;
+    height: 60px;
+    background: transparent linear-gradient(180deg, #1C6AF2 0%, #0E3579 100%);
+    border-radius: 20px;
+    opacity: 0.1;
+}
+.phT{
+    width: 200px;
+    height: 42px;
+    margin: 9px 0px 7px 20px;
+}
+.pnAdded{
+    margin-bottom: 7px;
+    width: 200px;
+    height: 19px;
+    font-size: 16px;
+    text-align: left;
+}
+.timeAdded{
+    width: 200px;
+    height: 16px;
+    font-size: 14px;
+    opacity: 0.6;
+    text-align: left;
+}
