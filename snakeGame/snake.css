@@ -1,0 +1,174 @@
+#gameArea{
+    width : 500px;
+    height: 500px;
+    background-color: #363636;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid #000000;
+    margin-bottom: 7px;
+}
+#girds{
+    display: grid;
+    grid-template-columns : repeat(40,1fr);
+    grid-template-rows    : repeat(40,1fr);
+    position: relative;
+}
+.snake{
+    background-color: #ffd900;
+    border-radius: 3px;
+    z-index: 1;
+}
+.snakeHead{
+    background-color:#ffd900;
+    background-image: url("images/snakeEye.png");
+    border-radius: 2px;
+    padding: 6px;
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+.food{
+    background-color: #ff0000;
+    border-radius: 6px;
+}
+.splFood{
+    background-color: #00ff26;
+    border-radius: 3px;
+    padding: 5px;
+}
+.fullFood{
+    background-color: #b0ff04;
+    border-radius: 8px;
+}
+.gameContainer{
+    width: 540px;
+    height: 570px;
+    margin: 30px auto;
+    background-color: #adadad;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 10px;
+    border: 1px solid #000000;
+    position: relative;
+    display: none;
+}
+td{
+    width: 167px;
+}
+#playerT{
+    text-align: left;
+    padding-left: 20px;
+}
+#scoreT{
+    text-align: right;
+    padding-right: 20px;
+}
+.menuButton{
+    background-color: #adadad;
+    border: none;
+    width: 200px;
+    height: 20px;
+    font-size: 18px;
+}
+.menuButtons{
+    margin-top: 150px;
+}
+#menuContainer, #nameInputContainer{
+    border-radius: 5px;
+    display: none;
+    border: 1px solid #000000;
+    background-color: #adadad;
+    margin: auto;
+    margin-top: 30px;
+    width: 540px;
+    height: 570px;
+    text-align: center;
+}
+#nameInputContainer{
+    display: block;
+}
+.menuButton{
+    background-color: #adadad;
+    border: none;
+    width: 200px;
+    height: 20px;
+    font-size: 18px;
+}
+.menuButton:hover{
+    background-color: #adadad;
+    color: #ffffff;
+}
+button:hover{
+    cursor: pointer;
+}
+input{
+    margin-top: 150px;
+}
+.mpu{
+    background-color: #ff00dd;
+    border-radius: 6px;
+    padding: 6px;
+}
+.gameContainerButtons{
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    left: 220px;
+    top: 250px;
+    display: none;
+}
+#gameContainerMainButton{
+    top: 280px;
+}
+.highScoreContainer, .cdContainer{
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #000000;
+    background-color: #adadad;
+    margin: auto;
+    margin-top: 30px;
+    width: 540px;
+    height: 570px;
+    text-align: center;
+    display: none;
+}
+#myPic{
+    border-radius: 75px;
+    border: 2px solid #000000;
+}
+.cImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: auto;
+    margin-top: 80px;
+}
+#highScoreClose, #cdClose{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    font-size: 15px;
+    color: #000000;
+    right: 10px;
+    padding-top: 0px;
+    border: none;
+    background-color: transparent;
+}
+#highScoreClose:hover, #cdClose:hover{
+   color: #ff0000;
+}
+body{
+    background-color: #000000;
+}
+h3{
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+p{
+    margin-top: 0px;
+}
+#tempMSG{
+    margin-top: 10px;
+}
