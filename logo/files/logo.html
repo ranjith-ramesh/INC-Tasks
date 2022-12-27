@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task-4</title>
+        <link rel="stylesheet" type="text/css" href="logo.css">
+        <script src="logo.js" type="text/javascript"></script>
+    </head>
+
+    <body >
+        <div class="lc" id="lc"><!--lc => logoContainer-->
+            <div class="lc1">
+                <img class="imgBut" src="../images/rolls.jpg" alt="Rolls-Royce" onclick="disp(rolls)" title="Rolls-Royce">
+                <img class="imgBut" src="../images/benz.jpg" alt="Mercedes-Benz" onclick="disp(benz)"  title="Mercedes-Benz">
+                <img class="imgBut" src="../images/mc.jpg" alt="Mc-Laren" onclick="disp(mc)"  title="Mc-Laren">
+                <img class="imgBut" src="../images/jag.jpg" alt="Jaguar" onclick="disp(jag)"  title="Jaguar">
+                <img class="imgBut" src="../images/lambo.jpg" alt="Lamborgini" onclick="disp(lambo)"  title="Lamborgini">
+                <img class="imgBut" src="../images/lexus.jpg" alt="Lexus" onclick="disp(lexus)"  title="Lexus">
+                <img class="imgBut" src="../images/bmw.jpg" alt="BMW" onclick="disp(bmw)"  title="BMW">
+                <img class="imgBut" src="../images/porsche.jpg" alt="Porsche" onclick="disp(porsche)"  title="Porsche">
+                <img class="imgBut" src="../images/skoda.jpg" alt="Skoda" onclick="disp(skoda)" title="Skoda">
+                <img class="imgBut" src="../images/bentley.jpg" alt="Bentley" onclick="disp(bentley)" title="Bentley">
+            </div>
+        </div>
+        <div class="tableContainer" id="tableContainer">
+            <img alt="logo" id="fl" >
+           <div class="tableDiv"> 
+            <table>
+                <tr>
+                    <th>Organization Name</th>
+                    <td>:</td>
+                    <td id="ont"></td>
+                </tr>
+                <tr>
+                    <th>Chief Executive Officer</th>
+                    <td >:</td>
+                    <td id="ceot"></td>
+                </tr>
+                <tr>
+                    <th>Year Founded</th>
+                    <td>:</td>
+                    <td id="yeart"></td>
+                </tr>
+                <tr>
+                    <th>Left co-ordinate</th>
+                    <td>:</td>
+                    <td id="lct"></td>
+                </tr>
+                <tr>
+                    <th>Top co-ordinate</th>
+                    <td>:</td>
+                    <td id="tct"></td>
+                </tr>
+            </table></div>
+            <button id="closeTable" onclick="back()">x</button>
+        </div>
+    </body>
+</html>

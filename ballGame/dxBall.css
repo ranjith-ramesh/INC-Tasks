@@ -1,0 +1,165 @@
+body{
+    text-align: center;
+    background-color: #535353;
+}
+#nameInputContainer{
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color:  #a1a1a1;
+    margin: auto;
+    margin-top: 30px;
+    width: 540px;
+    height: 570px;
+    text-align: center;
+}
+#menuContainer{
+    border-radius: 5px;
+    display: none;
+    border: 1px solid #000000;
+    background-color: #a1a1a1;
+    margin: auto;
+    margin-top: 30px;
+    width: 540px;
+    height: 570px;
+    text-align: center;
+}
+.gameContainer{
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    display: none;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 10px;
+    width: 540px;
+    height: 560px;
+    text-align: center;
+    position: relative;
+}
+.highScoreContainer,.settingContainer, .cdContainer{
+    border-radius: 5px;
+    position: relative;
+    display: none;
+    border: 1px solid #000000;
+    background-color:  #a1a1a1;
+    margin: auto;
+    margin-top: 30px;
+    width: 540px;
+    height: 570px;
+    text-align: center;
+}
+td{
+    width: 167px;
+}
+#levelT,#level2ST{
+    text-align: center;
+}
+#scoreT{
+    text-align: right;
+    padding-right: 20px;
+}
+#lifeT,#level1ST{
+    text-align: left;
+    padding-left: 20px;
+}
+.gameContainerButtons{
+    display: none;
+    width: 120px;
+    height: 25px;
+    position: absolute;
+    top: 250px;
+    left: 210px;
+}
+#gameContainerRetryButton,#gameContainerMainButton{
+    top: 270px;
+}
+#gameContainerNewPlayerButton{
+    top: 300px;
+}   
+#playerName{
+    width: 200px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+.inputInInput{
+    margin-top: 180px;
+}
+.menuButton, .settingButton{
+    background-color:  #a1a1a1;
+    border: none;
+    width: 200px;
+    height: 20px;
+    font-size: 18px;
+}
+.menuButton:hover,.settingButton:hover{
+    background-color:  #a1a1a1;
+    color: #e0e0e0;
+}
+.menuButtons,.settingButtons{
+    margin-top: 120px;
+}
+.controlButton{
+    width: 120px;
+    height: 30px;
+    margin: 25px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.controlMenu{
+    display: none;
+    text-align: center;
+}
+#controlDone{
+    position: absolute;
+    left: 210px;
+    width: 80px;
+    height: 25px;
+    margin: 10px;
+    top: 270px;
+}
+.scoreDisp{
+    font-size: 12px;
+}
+#highScoreClose, #cdClose{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    font-size: 15px;
+    color: #000000;
+    right: 10px;
+    padding-top: 0px;
+    border: none;
+    background-color: transparent;
+}
+#highScoreClose:hover, #cdClose:hover{
+   color: #ff0000;
+}
+.gameArea{
+    border: 1px solid #000000;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    position: relative;
+    background-color:  #a1a1a1;
+    border-radius: 5px;
+}
+.brick,.paddle,.ball{
+    background-color: #000000;
+    position: absolute;
+}
+.cImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: auto;
+    margin-top: 80px;
+}
+img{
+    border-radius: 75px;
+    border: 2px solid #000000;
+}
+button:hover{
+    cursor: pointer;
+}

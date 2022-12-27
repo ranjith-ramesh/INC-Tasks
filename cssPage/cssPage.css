@@ -1,0 +1,82 @@
+body{
+    background-image: url("bgd.svg");
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    background-position: center;
+}
+.container{
+    width: 340px;
+    height: 350px;
+    background-color: #ffffff;
+    margin: 45px auto;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    padding: 30px;
+}
+.zohoLogo{
+    height: 30px;
+}
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+.countrySelect{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 340px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ededed;
+}
+.tLink{
+    font-size: 12px;
+    color: #009dff;
+}
+.tLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.ipText{
+    font-size: 11px;
+    color: #a2a2a2;
+    margin-bottom: 0px;
+}
+.submitButton{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 340px;
+    color: #ffffff;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    background-color: #3ea2ff;
+}
+.submitButton:hover{
+    cursor: pointer;
+    background-color: #0084ffd7;
+}
+.errText{
+    font-size: 12px;
+    color: #ff0000;
+    padding-left: 5px;
+    visibility: hidden;
+}
+#sucD{
+    text-align: center;
+    color: #2f2f2f;
+}
+#c2{
+    display: none;
+}
+#welcomeT{
+    font-size: 18px;
+}
+#oD{
+    text-align: center;
+    color: #a2a2a2;
+    margin-bottom: 30px;
+}

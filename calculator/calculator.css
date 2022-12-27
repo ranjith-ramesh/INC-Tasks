@@ -1,0 +1,54 @@
+.container{
+	margin : auto;
+	margin-top: 25px;
+	text-align: center;
+	width: fit-content;
+	height : fit-content;
+	border : 2px solid black;
+	padding : 12px;
+	border-radius : 20px;
+	background-color: #e0e0e0;
+}
+.container:hover{
+	background-color: #e6e6e6;
+}
+input{
+	border : 1px solid #333333;
+	border-radius : 9px;
+	background-color: #f5f5f5;
+	width : 300px;
+	height : 30px;
+	font-size : 29px;
+	text-align: right;
+	margin : auto;
+	margin-top: 15px;
+	padding-right:5px;
+	margin-bottom: 15px;
+}
+button{
+	border : 1px solid #000000 ;
+	width : 48px;
+	height : 33px;
+	margin : 7px;
+	font-size: 21px;
+	padding: 0px;
+	border-radius : 7px;
+}
+button:hover{
+	background-color : #ffffff;
+}
+.buttons {
+	padding: 0px;
+}
+.numbut{
+	background-color: #a9a9a9;
+}
+.orgbut{
+	background-color: #fff5e6;
+}
+.pnkbut{
+	background-color: #ffcce0;
+}
+.otrbut{
+	background-color: #fafafa;
+}

@@ -1,0 +1,96 @@
+
+body{
+    background-color: #d3d3d3;
+    font-family: 'Times New Roman';
+}
+small{
+    visibility: hidden;
+    color:#ff0000;
+    font-size: 16px;
+}
+label{
+    font-size: 16px;
+    float: left;
+}
+table, tr, td{
+	border : 1px solid #000000;
+    border-radius: 5px;
+	border-collapse: collapse;
+	text-align : center;
+	font-size : 22px;
+}
+td,th {
+	width : 300px;
+    color: #1a1a1a;
+	height : 30px;
+}
+.formContainer{
+    border: 1px solid #000000;
+    border-radius: 15px;
+	background-color: #f5f5f5;
+	height: auto;
+	padding: 26px;
+	margin: auto;
+    margin-top: 45px;
+	width: fit-content;
+}
+.tableContainer{
+    border: 1px solid #000000;
+    display: none;
+    border-radius: 12px;
+	background-color: #f5f5f5;
+	height: auto;
+	padding: 26px;
+	margin: auto;
+    margin-top: 15px;
+	width: 600px;
+}
+input , select{
+    width: 270px;
+    height: 25px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.fname , .dob , .sex {
+    line-height: 20px;
+} 
+button {
+    margin-top: 10px;
+    width: 160px;
+    height: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #b9c5c5;
+}
+h1{
+    text-align: center;
+}
+.small {
+    align-items: center;
+    text-align: center;
+}
+.btns{
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+#sub:hover{
+    background-color: #0c840c;
+    border-color: #079807;
+}
+#sub{
+    background-color: #319339;
+    border-color: #68d271;
+}
+header {
+    background: #e2e2e2;
+    padding: 1rem;
+    text-align: center;
+    font-size : 40px;
+  }

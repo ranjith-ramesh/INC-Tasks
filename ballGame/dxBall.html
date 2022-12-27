@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dxBall</title>
+    <link rel="stylesheet" href="dxBall.css">
+    <script src="dxBall.js"></script>
+</head>
+<body onload="loader()">
+    <div class="screen">
+        <div class="nameInputContainer" id="nameInputContainer">
+            <h1>DX BALL GAME</h1>
+            <div class="inputInInput">
+                <input type="text" id="playerName" placeholder="Enter Your Name" autocomplete="off"><br><br>
+                <button type="submit" onclick="nameContinue()">CONTINUE</button>
+            </div>
+        </div>
+        <div class="menuContainer" id="menuContainer">
+            <h1 id="playerGreet"></h1>
+            <div class="menuButtons">
+                <button class="menuButton" onclick="menuPlayGame()">PLAY GAME</button><br><br>
+                <button class="menuButton" onclick="settings()">SETTINGS</button><br><br>
+                <button class="menuButton" onclick="newPlayer()">NEW PLAYER</button><br><br>
+                <button class="menuButton" onclick="highScore()">HIGH SCORE</button><br><br>
+                <button class="menuButton" onclick="cdOpen()">CREATOR DETAILS</button>
+            </div>
+        </div>
+        <div class="highScoreContainer" id="highScoreContainer">
+            <h1>HIGH SCORES</h1><br><br><br>
+            <button id="highScoreClose" onclick="highScoreClose()">x</button>
+            <h3>KEYBOARD</h2>
+            <p id="highScore0"></p><br>
+            <h3>MOUSE</h2>
+            <p id="highScore1"></p>
+        </div>
+        <div class="cdContainer" id="cdContainer">
+            <div class="cImage">
+                <img src="myPic.jpg" alt="My pic" width="150px">
+            </div>
+            <h2>Ranjith Ramesh</h2>
+            <h2>Zoho Corporation</h3>
+            <h3>+91 8220027378</h3>
+            <h4>ranjithrameshofficial@gmail.com</h4>
+            <h3>PUDUCHERRY</h3>
+            <button id="cdClose" onclick="cdClose()">x</button>
+        </div>
+        <div class="settingContainer" id="settingContainer">
+            <h1>SETTINGS</h1>
+            <div class="settingButtons">
+                <button class="settingButton" onclick="settingControl()">CONTROL</button>
+            </div>
+            <div class="controlMenu" id="controlMenu">
+                <button class="controlButton" id="controlKeyButton" onclick="keyMove()">KEYBOARD</button>
+                <button class="controlButton" id="controlMouseButton" onclick="mouseMove()">MOUSE</button>
+                <button class="controlButton" id="controlDone" onclick="controlDone()">DONE</button>
+            </div>
+   
+        </div>
+
+        <div class="gameContainer" id="gameContainer">
+            <table>
+                <tr>
+                    <td id="lifeT">LIFE:</td>
+                    <td id="timerT">TIME:</td>
+                    <td id="levelT">LEVEL:</td>
+                    <td id="scoreT">SCORE:</td>
+                </tr>
+            </table>
+            <div class="gameArea" id="gameArea" style="width:500px; height:500px" ></div>
+            <table>
+                <tr>
+                    <td class="scoreDisp" id="level1ST"></td>
+                    <td class="scoreDisp" id="level2ST"></td>
+                    <td id="playerNameT"></td>
+                </tr>
+            </table>
+            <button class="gameContainerButtons" id="gameContainerStartButton" onclick="startGame()">START</button>
+            <button class="gameContainerButtons" id="gameContainerRetryButton" onclick="gameOverRetry()">RETRY</button>
+            <button class="gameContainerButtons" id="gameContainerMainButton" onclick="mainMenu()">MAIN MENU</button>
+            <button class="gameContainerButtons" id="gameContainerNewPlayerButton" onclick="newPlayer()">NEW PLAYER</button>
+        </div>
+    </div>
+</body>
+</html>

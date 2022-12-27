@@ -1,0 +1,11 @@
+.gameArea{
+    border: 1px solid #000000;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+.brick,.paddle,.ball{
+    background-color: #000000;
+    position: absolute;
+}

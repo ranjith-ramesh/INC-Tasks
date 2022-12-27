@@ -1,0 +1,60 @@
+body{
+  background-color: #d3d3d3;
+}
+.container{
+  border: 1px solid #000000;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  position: relative;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 99px;
+  text-align: center;
+  padding: 34px;
+}
+input{
+  padding: 18px;
+  width: 377px;
+  height: 27px;
+  background-color: #ffffff;
+  border-radius: 9px;
+  font-size: 27px;
+  border: 1px solid #000000;
+}
+
+.buttons{
+  text-align: center;
+}
+button{
+  margin: auto;
+  width: 150px;
+  height: 38px;
+  border-radius: 7px;
+  border: 0.5px solid #000000;
+  background-color: #efefef;
+  font-size: 20px;
+}
+button:hover{
+  background-color: #ffffff;
+}
+.bc{
+  border: 1px solid #000000;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  position: relative;
+  margin: auto;
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  padding: 16px;
+}
+#oup{
+  text-align: center;
+}
+#errmsg{
+  color: #ff0000;
+  position: absolute;
+  visibility: hidden;
+  top: 10px;
+}
